@@ -21,6 +21,10 @@ header {
     padding-bottom: 20px;
     width: 100%;
 }
+img {
+    border: 0;
+    vertical-align: middle;
+}
 @media screen and (max-width: 767px){
     header {
         padding-top: 15px;
@@ -268,6 +272,9 @@ main {
 }    
 
 /*背景画像*/
+section {
+    display: block;
+}
 .FirstView {
     background-image:url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/home/first-view/top-hero.jpg);
     background-size: cover;
@@ -281,14 +288,16 @@ main {
         padding-top: 0;
         padding-bottom: 35px;
     }
-        .FirstView_main-image-sp{
+    .FirstView_main-image-sp{
         display: block;
     }
+    
 }   
+@media screen and (min-width: 768px){
 .FirstView_main-image-sp{
     display: none;
+    }
 }
-
 .FirstView_main-image-sp {
     width: 100%;
 }
